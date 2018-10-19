@@ -9,3 +9,9 @@ data %>%
                                 length < 300 ~ "small")) -> fishData
 
 head(fishData)
+
+
+ggplot() +
+  geom_histogram(data = fishData, aes(x=scalelength, fill = length_cat)) +
+                  facet_wrap(~length_cat, nrow = 1) +
+                   theme_jaz()
