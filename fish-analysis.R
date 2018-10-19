@@ -5,7 +5,7 @@ source("C:/Users/jcastillo3/Documents/R/2018-RClass/Class Work/gittutorial/R/The
 
 data %>% 
   
-  mutate(length_cat = case_when(length >= 200 ~ "big",
-                                length < 200 ~ "small")) -> fishData
+  mutate(length_cat = case_when(length >= 300 ~ "big",
+                                length < 300 ~ "small")) -> fishData
 
 head(fishData)
