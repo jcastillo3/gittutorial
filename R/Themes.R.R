@@ -30,13 +30,14 @@ theme_jazpres <- function() {
     )
 }
 
+# You should not have plots in your themes file. 
 
-ggplot() +
-  geom_point(data = mpg, aes(x = cty, y = hwy, colour = factor(cyl))) +
-  labs(title = "Jazmin's Theme") + 
-  theme_jaz()
-
-ggplot() +
-  geom_point(data = mpg, aes(x = cty, y = hwy, colour = factor(cyl))) +
-  labs(title = "Jazmin's Presentation") + 
-  theme_jazpres()
+# ggplot() +
+#   geom_point(data = mpg, aes(x = cty, y = hwy, colour = factor(cyl))) +
+#   labs(title = "Jazmin's Theme") + 
+#   theme_jaz()
+# 
+# ggplot() +
+#   geom_point(data = mpg, aes(x = cty, y = hwy, colour = factor(cyl))) +
+#   labs(title = "Jazmin's Presentation") + 
+#   theme_jazpres()
